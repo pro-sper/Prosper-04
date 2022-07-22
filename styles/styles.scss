@@ -18,7 +18,9 @@
     --color-grey-4: #454e56;
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
+    --color-oranger: rgb(201, 253, 133);
     --br-sm-2: 14px;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,0.2);
 }
 
 body{
@@ -60,22 +62,29 @@ section{
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: rgb(146, 63, 63);
 }
 
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: rgb(201, 160, 83);
 }
 
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: rgb(126, 226, 126);
 }
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: rgb(126, 87, 155);
 }
 
+.active{
+    display: block;
+}
 .controls{
     position: fixed;
     z-index: 10;
@@ -84,16 +93,31 @@ section{
     display: flex;
     flex-direction: column;
     transform: translateY(-50%);
+
+    .active-btn{ 
+        background-color: var(--color-oranger) !important;
+        transition: all .4s ease-in-out;
+        i{
+            color: var(--color-black) !important; 
+        }
+
+    }
     .control{
         padding: 1rem;
         cursor: pointer;
         background-color: var(--color-grey-4);
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
         border-radius: 50;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: .7rem;
+        box-shadow: var(--box-shadow-1);
+        i{
+            font-size: 1.2rem;
+            color: var(--color-secondary);
+            pointer-events: none;
+        }
     }
 }
