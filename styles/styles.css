@@ -42,6 +42,12 @@ header {
   color: var(--color-white);
   overflow: hidden;
 }
+header img {
+  border-radius: 25px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+}
 
 section {
   min-height: 100vh;
@@ -108,7 +114,7 @@ section {
   background-color: var(--color-grey-4);
   width: 50px;
   height: 50px;
-  border-radius: 50;
+  border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
