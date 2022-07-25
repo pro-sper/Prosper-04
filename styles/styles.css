@@ -41,6 +41,7 @@ header {
   height: 100vh;
   color: var(--color-white);
   overflow: hidden;
+  /* Speronito Logo Settings */
 }
 header img {
   border-radius: 25px;
@@ -67,7 +68,7 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(146, 63, 63);
+  background-color: inherit;
 }
 
 .sec2 {
@@ -125,4 +126,26 @@ section {
   font-size: 1.2rem;
   color: var(--color-secondary);
   pointer-events: none;
+}
+
+/* Header Content*/
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+}
+.header-content .left-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header-content .left-header .h-shspe {
+  transition: all 0.4s ease-in-out;
+  width: 65%;
+  height: 100%;
+  background-color: var(--color-oranger);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }/*# sourceMappingURL=styles.css.map */
